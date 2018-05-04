@@ -1,0 +1,36 @@
+<div class="container-fluid lyftr-container">
+    <div class="row main">
+      <div class='col-sm-12 lyftr-contain-within'>
+        <div class="row">
+          <div class="col-sm-12 centered">
+            <h2>Lyftr<br>
+              <small>Privacy SETUP</small>
+            </h2>
+          </div>
+        </div>
+        <div class="row centered lyftr-contain">
+          <div class="col-sm-12 lyftr-wrap">
+            <h3>Set up your Privacy Defaults Here<br>
+              <small>
+                Click ONE box that you wish to be your default!
+              </small>
+            </h3>
+            <div class='row'>
+              <div class='privacy-points'>
+                <% for(let privacyPointKey in privacyPoints) { %>
+                <% let privacyPoint = privacyPoints[privacyPointKey]; %>
+                <%- partial('./policyPoint', {key: privacyPointKey, privacyPoint: privacyPoint}) %>
+                <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class='centered col-sm-12'>
+        <button type="button" class="big-btn">NEXT</button>
+      </div>
+    </div>
+  </div>
+  

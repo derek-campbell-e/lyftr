@@ -39,12 +39,8 @@ module.exports.routes = {
     }
   },
 
-  "/privacy" :{
-    view: 'privacy',
-    locals: {
-      layout: 'layout'
-    }
-  }
+  "/privacy" : 'PrivacyController.index',
+  '/privacy/setup': 'PrivacyController.setup'
 
   /***************************************************************************
   *                                                                          *

@@ -127,3 +127,43 @@ h3 {
   padding: 2em;
   color: $text-lighter;
 }
+
+.privacy-points {
+  @extend .col;
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+
+.privacy-point {
+  @extend .col;
+  text-align: left;
+  h3 {
+    color: $text-lighter;
+  }
+  color: darken($light-gray, 10%);
+  margin-bottom: 1em;
+}
+
+.lyftr-checkbox {
+  width: 45px;
+  height:45px;
+  border-radius: 10px;
+  background-color: $light-gray;
+  input {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+.lyftr-contain {
+  height: 100%;
+  overflow: auto;
+  flex: 1;
+  padding-top: 15em;
+  margin-bottom: 1em;
+}
+
+.lyftr-contain-within {
+  display: flex;
+  flex-direction: column;
+}
